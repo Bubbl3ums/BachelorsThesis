@@ -1,0 +1,64 @@
+<!-- This code was adapted from https://github.com/tmlbl/nback -->
+
+<!doctype html>
+<html lang="en">
+<head>
+		<script>
+			localStorage.clear();
+		</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="../Modules/jspsych-modified.js"></script>
+	<script src = "../ID_handler.js"> </script>
+
+    <script type="text/javascript" src="../Modules/jspsych-7-pavlovia-2022.1.1-modified.js?1"></script>
+	<link rel="stylesheet" href="nback.css">
+	<!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>AVG N-back task</title>
+</head>
+<body>
+	<div id="nhead">
+		<h1 id="nvalue">VisuoSpatial N-back Task</h1>
+	</div>
+	<div id="instruct">
+		<div id="instructions">
+			<div class="content">
+			<h2>1 back task</h2>
+			<p>In this task, you will need to keep track of the positions of the black squares. After clicking begin, position a finger on the "A-button". Squares will flash in one of 8 positions
+		on the screen. Press the "A-button" when a visual cue matches the one presented before. Do not return to the questionnaire while performing this task. Please begin once you're ready!</p>
+
+		<div class="close"><button id="close" class="pure-button">BEGIN</button></div>
+	</div>
+	</div>
+	</div>
+	<div id="resultswindow">
+		<div class="content">
+		<h2 id="resultstitle"></h2>
+			<p id="results"></p>
+			<p id="resultstwo"></p>
+			<div class="close"><button id="resultclose" class="pure-button">BEGIN</button></div>
+		</div>
+	</div>
+	<table>
+		<tr>
+			<td><div id="uno" class="off"></div></td>
+			<td><div id="dos" class="off"></div></td>
+			<td><div id="tres" class="off"></div></td>
+		</tr>
+		<tr>
+			<td><div id="cuatro" class="off"></div></td>
+			<td><div id="cinco" class="off"><img src="images/plus.png" alt=""></div></td>
+			<td><div id="seis" class="off"></div></td>
+		</tr>
+		<tr>
+			<td><div id="siete" class="off"></div></td>
+			<td><div id="ocho" class="off"></div></td>
+			<td><div id="nueve" class="off"></div></td>
+		</tr>
+	</table>
+	<div class="btn"><button id="begin" class="pure-button">Begin</button></div>
+	<div class="btn"><button id="info" class="pure-button">Instructions</button></div>
+	<script src="nback.js"></script>
+</body>
+</html>
